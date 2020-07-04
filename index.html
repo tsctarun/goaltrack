@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Goal Tracking
+        </title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Add Your Goals</h1>
+        </header>
+        <section id="sec">
+           <table  id="tab"cellspacing="10">
+               <tr>
+                   <th>SNo.</th>
+                   <th colspan="4">Activity Discription</th>
+                   <th>Day 1</th>
+                   <th>Day 2</th>
+                   <th>Day 3</th>
+                   <th>Day 4</th>
+                   <th>Day 5</th>
+                   <th>Day 6</th>
+                   <th>Day 7</th>
+                   <th>Progress</th>
+               </tr>
+               <form id="goal" action="">
+               <tr>
+                   <td align="center" id="serial1">1.</td>
+                   <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                   <td align="center" id="totals"></td>
+               </tr>
+               <tr>
+                <td align="center" id="serial2">2.</td>
+                <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center" id="totals"></td>
+            </tr>
+            <tr>
+                <td align="center" id="serial3">3.</td>
+                <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center" id="totals"></td>
+            </tr>
+            <tr>
+                <td align="center" id="serial4">4.</td>
+                <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center" id="totals"></td>
+            </tr>
+            <tr>
+                <td align="center" id="serial5">5.</td>
+                <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center" id="totals"></td>
+            </tr>
+            <tr>
+                <td align="center" id="serial6">6.</td>
+                <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+                <td align="center" id="totals"></td>
+            </tr>
+            <td align="center" id="serial7">7.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>
+        <tr>
+            <td align="center" id="serial8">8.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>
+        <tr>
+            <td align="center" id="serial9">9.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>
+        <tr>
+            <td align="center" id="serial10">10.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>
+        <tr>
+            <td align="center" id="serial11">11.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>
+        <tr>
+            <td align="center" id="serial12"> 12.</td>
+            <td colspan="4"><input type="text" name="activity" placeholder="Activity Name" class="user_input"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center"><input type="checkbox" class="tickmark" onclick="calculate();"></td>
+            <td align="center" id="totals"></td>
+        </tr>  
+        <tr>
+        <td align="center" colspan="12">
+            <button style="width:200px;margin-top:10px;border-radius: 12px;">Submit</button>
+            </td>
+        </tr>    
+        </form>
+     </table>
+     <aside id="right">
+         <img src="progress.png" width="400vw" height="465" alt="">
+     </aside>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="goal.js">
+        </script>
+    </body>
+</html>
